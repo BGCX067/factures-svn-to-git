@@ -1,0 +1,172 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>albert.lacambra</groupId>
+	<artifactId>factures.api</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1</version>
+	<name>factures.api Jersey Webapp</name>
+	<build>
+		<finalName>factures.api</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<inherited>true</inherited>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+<!-- 				<version>8.1.0.v20120127</version> -->
+				<configuration>
+<!-- 					<webAppSourceDirectory>${basedir}/src/main/webapp</webAppSourceDirectory> -->
+<!-- 					<classesDirectory>${basedir}/target/factures-api/WEB-INF/lib/</classesDirectory> -->
+					<stopPort>9966</stopPort>
+					<stopKey>foo</stopKey>
+					<!-- <webAppXml>src/test/resources/jetty-test.xml</webAppXml> -->
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<useSystemClassLoader>true</useSystemClassLoader>
+				</configuration>
+			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>org.glassfish</groupId> -->
+			<!-- <artifactId>maven-glassfish-plugin</artifactId> -->
+			<!-- </plugin> -->
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>${jersey-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>${jersey-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>${jersey-version}</version>
+			<scope>test</scope>
+		</dependency>
+		 <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.code.guice</groupId> -->
+<!-- 			<artifactId>guice</artifactId> -->
+<!-- 			<version>3.0-r1291</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.code.guice</groupId> -->
+<!-- 			<artifactId>guice-struts</artifactId> -->
+<!-- 			<version>2.0.1</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.code.guice</groupId> -->
+<!-- 			<artifactId>guice-servlet</artifactId> -->
+<!-- 			<version>3.0-r1291</version> -->
+<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax</groupId> -->
+		<!-- <artifactId>javaee-api</artifactId> -->
+		<!-- <version>6.0</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.glassfish.distributions</groupId> -->
+		<!-- <artifactId>web-all</artifactId> -->
+		<!-- <version>10.0-build-20080430</version> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.jboss.spec</groupId>
+			<artifactId>jboss-javaee-6.0</artifactId>
+			<version>1.0.0.Final</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.0.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.2.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-guice</artifactId>
+			<version>${jersey-version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.glassfish.embedded</groupId> -->
+		<!-- <artifactId>gf-embedded-api</artifactId> -->
+		<!-- <version>1.0-alpha-4</version> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.sun.jersey</groupId> -->
+		<!-- <artifactId>jersey-servlet</artifactId> -->
+		<!-- <version>${jersey-version}</version> -->
+		<!-- </dependency> -->
+	</dependencies>
+	<properties>
+		<jersey-version>1.11</jersey-version>
+		<basedir>/home/albert/workspace-jee/factures-api</basedir>
+		<guice.version>3.0</guice.version>
+	</properties>
+	<!-- <repository> -->
+	<!-- <id>glassfish.java.net</id> -->
+	<!-- <name>GlassFish Maven Repository</name> -->
+	<!-- <url>http://download.java.net/maven/glassfish</url> -->
+	<!-- <layout>default</layout> -->
+	<!-- </repository> -->
+	<!-- <repository> -->
+	<!-- <id>m2.java.net</id> -->
+	<!-- <name>Java.net Maven 2 Repository</name> -->
+	<!-- <url>http://download.java.net/maven/2</url> -->
+	<!-- <layout>default</layout> -->
+	<!-- </repository> -->
+	<!-- </repositories> -->
+	<!-- <pluginRepositories> -->
+	<!-- <pluginRepository> -->
+	<!-- <id>m2.java.net</id> -->
+	<!-- <name>Java.net Maven 2 Repository</name> -->
+	<!-- <url>http://download.java.net/maven/2</url> -->
+	<!-- <layout>default</layout> -->
+	<!-- </pluginRepository> -->
+	<!-- </pluginRepositories> -->
+</project>

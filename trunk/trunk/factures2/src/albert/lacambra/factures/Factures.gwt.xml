@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module rename-to='factures'>
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User'/>
+	<inherits name='com.google.gwt.inject.Inject'/>
+	<inherits name='com.google.gwt.resources.Resources'/>
+	<inherits name='com.google.gwt.json.JSON' />
+	<inherits name='com.google.gwt.activity.Activity' />
+	<inherits name='com.google.gwt.place.Place' />
+	<inherits name='com.google.gwt.user.theme.clean.Clean' />
+	<inherits name='com.google.gwt.editor.Editor' />
+	<inherits name='com.google.web.bindery.requestfactory.RequestFactory' />
+	<inherits name='com.google.gwt.visualization.Visualization'/>
+
+<!-- 	<inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+	<inherits name='com.google.gwt.user.theme.chrome.Chrome'/>
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+	<!-- Other module inherits                                      -->
+	<inherits name='com.gwtplatform.mvp.Mvp'/>
+	<inherits name='com.gwtplatform.dispatch.Dispatch'/>
+
+	<!-- Specify the app entry point class.                         -->
+	<entry-point class='albert.lacambra.factures.app.Factures'/>
+
+	<!-- Specify the paths for translatable code                    -->
+	<source path='app'/>
+
+	<define-configuration-property name='gin.ginjector' is-multi-valued='false' />
+	<set-configuration-property name='gin.ginjector' value='albert.lacambra.factures.app.gin.ClientGinjector' />
+
+</module>

@@ -1,0 +1,64 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.space {
+			margin-top: 10px;
+			padding: 5px;
+			font-weight: bold;
+		}
+		
+		.strong {
+			font-weight: bold;
+			font-size: 20px;
+			color: green;
+		}
+	</ui:style>
+	<g:HorizontalPanel>
+		<g:VerticalPanel ui:field="container">
+			<g:Label ui:field="totalLabel" styleName="{style.space} {style.strong}" />
+			<g:VerticalPanel ui:field="filtersPanel">
+				<g:VerticalPanel ui:field="categoriesFilterPanel">
+					<g:Label styleName="{style.space}" text="Categories"
+						ui:field="categoriersFilterLabel" />
+					<g:VerticalPanel ui:field="categorieTagsContainer" />
+				</g:VerticalPanel>
+				<g:VerticalPanel ui:field="dateFilterPanel">
+					<g:Label styleName="{style.space}" text="Dates" ui:field="dateFilterLabel" />
+					<g:VerticalPanel ui:field="dateFilterContainer" />
+				</g:VerticalPanel>
+				<g:VerticalPanel ui:field="extraFilterPanel">
+					<g:Label styleName="{style.space}" text="Extra Info"
+						ui:field="extraFilterLabel" />
+					<g:VerticalPanel ui:field="extraFilterContainer" />
+				</g:VerticalPanel>
+				<g:VerticalPanel ui:field="ownerFilterPanel">
+					<g:Label styleName="{style.space}" text="Owner" ui:field="ownerFilterLabel" />
+					<g:VerticalPanel ui:field="ownerFilterContainer" />
+				</g:VerticalPanel>
+			</g:VerticalPanel>
+		</g:VerticalPanel>
+		<g:VerticalPanel ui:field="usedFiltersPanel">
+			<g:VerticalPanel>
+				<g:Label styleName="{style.space}" text="Categories"/>
+				<g:VerticalPanel  ui:field="selectedCategoriesFilterPanel"/>
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:Label styleName="{style.space}" text="Dates"/>
+				<g:VerticalPanel ui:field="selectedDateFilterPanel"/>
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:Label styleName="{style.space}" text="Extra Info"/>
+				<g:VerticalPanel ui:field="selectedExtraFilterPanel"/>
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:Label styleName="{style.space}" text="Owner"/>
+				<g:VerticalPanel ui:field="selectedOwnerFilterPanel"/>
+			</g:VerticalPanel>
+		</g:VerticalPanel>
+	</g:HorizontalPanel>
+</ui:UiBinder>

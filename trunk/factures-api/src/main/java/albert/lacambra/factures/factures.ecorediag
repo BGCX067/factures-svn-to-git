@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_7ko5UaHlEeGFdKC8zt3XbA" type="EcoreTools" name="factures" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="__huZ8KHlEeGFdKC8zt3XbA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="__hwPIKHlEeGFdKC8zt3XbA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="__hxdQKHlEeGFdKC8zt3XbA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_XgTS8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Factura/facturaId"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_XgTS8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_LGKGcKHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Factura/persona"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_LGKGcaHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_GrCmAKHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Factura/quantitat"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_GrCmAaHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_M3Ji8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Factura/data"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_M3Ji8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="__hxdQaHlEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__hxdQqHlEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__hxdQ6HlEeGFdKC8zt3XbA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="__hyEUKHlEeGFdKC8zt3XbA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="__hyrYKHlEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__hyrYaHlEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__hyrYqHlEeGFdKC8zt3XbA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="__hvBAKHlEeGFdKC8zt3XbA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="factures.ecore#//Factura"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__hvBAaHlEeGFdKC8zt3XbA" x="77" y="297"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BLfNEKHmEeGFdKC8zt3XbA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_BLf0IKHmEeGFdKC8zt3XbA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_BLgbMKHmEeGFdKC8zt3XbA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_PHRygKHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Persona/nom"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PHRygaHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_QEEx8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Persona/cognom"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_QEEx8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Wkys8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Persona/personaId"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Wkys8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BLgbMaHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BLgbMqHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BLgbM6HmEeGFdKC8zt3XbA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BLgbNKHmEeGFdKC8zt3XbA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BLgbNaHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BLhCQKHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BLhCQaHmEeGFdKC8zt3XbA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_BLfNEaHmEeGFdKC8zt3XbA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="factures.ecore#//Persona"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BLfNEqHmEeGFdKC8zt3XbA" x="484" y="297"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_Eza9EKHmEeGFdKC8zt3XbA" type="1005">
+    <children xmi:type="notation:Node" xmi:id="_EzbkIKHmEeGFdKC8zt3XbA" type="4010"/>
+    <children xmi:type="notation:Node" xmi:id="_EzcLMKHmEeGFdKC8zt3XbA" type="5008">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_EzcLMaHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_EzcLMqHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_EzcLM6HmEeGFdKC8zt3XbA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_Eza9EaHmEeGFdKC8zt3XbA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EEnum" href="factures.ecore#//TipusFactura"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eza9EqHmEeGFdKC8zt3XbA" x="165" y="484"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_REP1gKHmEeGFdKC8zt3XbA" type="1001">
+    <children xmi:type="notation:Node" xmi:id="_RERDoKHmEeGFdKC8zt3XbA" type="4001"/>
+    <children xmi:type="notation:Node" xmi:id="_RERDoaHmEeGFdKC8zt3XbA" type="5001">
+      <children xmi:type="notation:Node" xmi:id="_SAvS8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Usuaris/nom"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_SAvS8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Ss6ccKHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Usuaris/cognom"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Ss6ccaHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_TXBwcKHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Usuaris/username"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_TXBwcaHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_UYt28KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Usuaris/pwd"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_UYueAKHmEeGFdKC8zt3XbA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_YfeQ8KHmEeGFdKC8zt3XbA" type="2001">
+        <element xmi:type="ecore:EAttribute" href="factures.ecore#//Usuaris/userId"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_YfeQ8aHmEeGFdKC8zt3XbA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_RERDoqHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RERDo6HmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RERDpKHmEeGFdKC8zt3XbA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_RERqsKHmEeGFdKC8zt3XbA" type="5002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_RERqsaHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_RERqsqHmEeGFdKC8zt3XbA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_RERqs6HmEeGFdKC8zt3XbA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_REP1gaHmEeGFdKC8zt3XbA" fontColor="4210752" fontName="Ubuntu" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
+    <element xmi:type="ecore:EClass" href="factures.ecore#//Usuaris"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_REP1gqHmEeGFdKC8zt3XbA" x="297" y="99"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_7kpgYKHlEeGFdKC8zt3XbA"/>
+  <element xmi:type="ecore:EPackage" href="factures.ecore#/"/>
+  <edges xmi:type="notation:Edge" xmi:id="_gpz1IKHmEeGFdKC8zt3XbA" type="3002" source="__huZ8KHlEeGFdKC8zt3XbA" target="_BLfNEKHmEeGFdKC8zt3XbA">
+    <children xmi:type="notation:Node" xmi:id="_gp1DQKHmEeGFdKC8zt3XbA" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gp1DQaHmEeGFdKC8zt3XbA" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_gp1qUKHmEeGFdKC8zt3XbA" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gp1qUaHmEeGFdKC8zt3XbA" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_gpz1IaHmEeGFdKC8zt3XbA" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_gpz1IqHmEeGFdKC8zt3XbA" fontColor="4210752" fontName="Ubuntu" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="factures.ecore#//Factura/ha%20estat%20pagada%20per"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_gpz1I6HmEeGFdKC8zt3XbA" points="[-4, -47, -4, -47]$[-4, -47, -4, -47]"/>
+  </edges>
+</notation:Diagram>

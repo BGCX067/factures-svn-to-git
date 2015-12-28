@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:Label ui:field="infoLabel"></g:Label>
+		<g:HTMLPanel height='500px'>
+			Who:
+			<br />
+			<g:RadioButton name="who" ui:field="whoAlbert">Albert</g:RadioButton>
+			<g:RadioButton name="who" ui:field="whoRuth">Ruth</g:RadioButton>
+			<g:RadioButton name="who" ui:field="whoBoth">Both</g:RadioButton>
+			<g:RadioButton name="who" ui:field="whoUnknown">Unknown</g:RadioButton>
+			<br />
+			price:
+			<br />
+			<g:TextBox ui:field="price"></g:TextBox>
+			<br />
+			Start date:
+			<br />
+			<g:TextBox ui:field="startDay">dd</g:TextBox>
+			<g:TextBox ui:field="startMonth">mm</g:TextBox>
+			<g:TextBox ui:field="startYear">yyyy</g:TextBox>
+			<br />
+
+			frequency:
+			<br />
+			<g:TextBox ui:field="frequency"></g:TextBox>
+			<br />
+
+			End date:
+			<br />
+			<g:TextBox ui:field="endDay">dd</g:TextBox>
+			<g:TextBox ui:field="endMonth">mm</g:TextBox>
+			<g:TextBox ui:field="endYear">yyyy</g:TextBox>
+			<br />
+
+			category:
+			<br />
+			<g:TextBox ui:field="category"></g:TextBox>
+			<br />
+			extra:
+			<br />
+			<g:TextBox ui:field="extra"></g:TextBox>
+			<br />
+			<g:Button styleName="{style.important}" ui:field="button"
+				text="submit" />
+			<br />
+			Active:
+			<g:CheckBox ui:field="active">
+			</g:CheckBox>
+
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.draggableContainer {
+			width: 200px;
+			height: 200px;
+			background: #3AA;
+		}
+	</ui:style>
+	<g:HorizontalPanel>
+		<g:HTMLPanel>
+			<g:HTMLPanel ui:field="fixcCosts" styleName=''></g:HTMLPanel>
+			<g:HTMLPanel ui:field="totalPrice" styleName=''></g:HTMLPanel>
+		</g:HTMLPanel>
+		<g:HTMLPanel ui:field="filterPanel">
+			<g:HTMLPanel ui:field="categoryFilter"></g:HTMLPanel>
+			<br />
+			<g:HTMLPanel ui:field="dateFilter"></g:HTMLPanel>
+			<br />
+			<g:HTMLPanel ui:field="personFilter"></g:HTMLPanel>
+		</g:HTMLPanel>
+	</g:HorizontalPanel>
+</ui:UiBinder>

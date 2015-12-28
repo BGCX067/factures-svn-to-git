@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys='com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator'
+	ui:generateLocales='default'>
+
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.container{
+			margin: auto;
+			width: 1024px;
+		}	
+	</ui:style>
+	<g:HTMLPanel styleName="{style.container}">
+		<g:Button styleName="{style.important}" ui:field="goToNewInvoice"
+			text="New Invoice" />
+		<g:Button styleName="{style.important}" ui:field="goToNewFixCost"
+			text="New fix cost" />
+		<g:Button styleName="{style.important}" ui:field="goToInvoiceList"
+			text="Invoices list" />
+		<g:Button styleName="{style.important}" ui:field="goToCostList"
+			text="Fix costs list" />
+		<g:Button styleName="{style.important}" ui:field="goToCharts"
+			text="Charts" />
+		<br />
+		<g:HTMLPanel ui:field="container"></g:HTMLPanel>
+	</g:HTMLPanel>
+
+</ui:UiBinder>
